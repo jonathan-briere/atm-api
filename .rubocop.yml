@@ -31,11 +31,13 @@ Layout/LineLength:
   Exclude:
     - 'config/environments/*'
     - 'config/initializers/*'
+    - 'config/routes.rb'
 
 Metrics/BlockLength:
   Exclude:
     - 'Guardfile'
     - 'config/environments/*'
+    - 'spec/controllers/**/*.rb'
 
 Metrics/ClassLength:
   Exclude:

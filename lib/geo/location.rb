@@ -11,7 +11,9 @@ module Geo
     def find_by(ip:)
       @url += "/#{ip}.json"
 
-      request
+      Rails.cache.fetch(ip) do
+        request
+      end
     end
   end
 end
